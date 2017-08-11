@@ -43,8 +43,8 @@
 function updateImpactELARecord(){
 	var impact1 = new GlideRecord('x_elar_metrix_launch_availability');
 //	gs.addInfoMessage('impact1 var instantiated');
-// 	gs.addInfoMessage('impact1.get= '+ current.u_ela_record);
-	if(impact1.get(current.u_ela_record)) {
+// 	gs.addInfoMessage('impact1.get= '+ current.x_elar_metrix_ela_record);
+	if(impact1.get(current.x_elar_metrix_ela_record)) {
 		impact1.u_business_service = current.u_service; //Business Service
 		impact1.u_create_date = current.sys_created_on; //Create date
 		impact1.u_end_date = current.u_parent_incident.u_outage_end_time; //End date
@@ -70,7 +70,7 @@ function updateImpactELARecord(){
         <sys_customer_update>true</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>3b0e37410f680b007fbd317ce1050ed9</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>EADP Availability update SO impact</sys_name>
         <sys_overrides/>
         <sys_package display_value="Metrix" source="x_elar_metrix">2a9bc7450fa4870046c149bce1050efa</sys_package>
@@ -79,7 +79,7 @@ function updateImpactELARecord(){
         <sys_scope display_value="Metrix">2a9bc7450fa4870046c149bce1050efa</sys_scope>
         <sys_update_name>sys_script_3b0e37410f680b007fbd317ce1050ed9</sys_update_name>
         <sys_updated_by>ssturdevant</sys_updated_by>
-        <sys_updated_on>2017-08-11 19:51:06</sys_updated_on>
+        <sys_updated_on>2017-08-11 20:20:05</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>

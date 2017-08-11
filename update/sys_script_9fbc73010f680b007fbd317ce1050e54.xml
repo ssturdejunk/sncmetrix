@@ -50,15 +50,15 @@
 deleteELARecord();
 
 function deleteImpactRecord(){
-	var impact1 = new GlideRecord('u_eadp_launch_availability');
-	if(impact1.get(current.u_ela_record)); {
+	var impact1 = new GlideRecord('x_elar_metrix_launch_availability');
+	if(impact1.get(current.x_elar_metrix_ela_record)); {
 				impact1.deleteRecord();
 // 				gs.addInfoMessage('impact deleted');
 		}
  	}
 
 function deleteELARecord(){
-			current.u_ela_record = '';
+			current.x_elar_metrix_ela_record = '';
 		current.update();
 	   }]]></script>
         <sys_class_name>sys_script</sys_class_name>
@@ -67,7 +67,7 @@ function deleteELARecord(){
         <sys_customer_update>true</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>9fbc73010f680b007fbd317ce1050e54</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>EADP Availability remove non5 SO impact</sys_name>
         <sys_overrides/>
         <sys_package display_value="Metrix" source="x_elar_metrix">2a9bc7450fa4870046c149bce1050efa</sys_package>
@@ -76,7 +76,7 @@ function deleteELARecord(){
         <sys_scope display_value="Metrix">2a9bc7450fa4870046c149bce1050efa</sys_scope>
         <sys_update_name>sys_script_9fbc73010f680b007fbd317ce1050e54</sys_update_name>
         <sys_updated_by>ssturdevant</sys_updated_by>
-        <sys_updated_on>2017-08-11 19:48:03</sys_updated_on>
+        <sys_updated_on>2017-08-11 20:19:10</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>

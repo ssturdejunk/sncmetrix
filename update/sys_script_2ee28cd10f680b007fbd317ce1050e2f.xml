@@ -10,27 +10,26 @@
         <action_query>false</action_query>
         <action_run_at>server</action_run_at>
         <action_update>true</action_update>
-        <active>true</active>
+        <active>false</active>
         <add_message>false</add_message>
         <advanced>true</advanced>
         <application/>
         <change_fields>false</change_fields>
         <client_callable>false</client_callable>
-        <collection>incident</collection>
-        <condition>current.isValidRecord() </condition>
+        <collection>change_request</collection>
+        <condition>current.u_scheduled_downtime_duration !='' || current.u_actual_downtime_duration !=''</condition>
         <description/>
         <execute_function>false</execute_function>
-        <filter_condition table="incident">u_outage_durationVALCHANGES^ORu_group_responsibleVALCHANGES^ORu_sub_group_responsibleVALCHANGES^ORu_outage_typeVALCHANGES^EQ<item endquery="false" field="u_outage_duration" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
-            <item endquery="false" field="u_group_responsible" goto="false" newquery="false" operator="VALCHANGES" or="true" value=""/>
-            <item endquery="false" field="u_sub_group_responsible" goto="false" newquery="false" operator="VALCHANGES" or="true" value=""/>
-            <item endquery="false" field="u_outage_type" goto="false" newquery="false" operator="VALCHANGES" or="true" value=""/>
+        <filter_condition table="change_request">u_organization=EADP^stateCHANGESTO4^u_ela_recordISNOTEMPTY^EQ<item endquery="false" field="u_organization" goto="false" newquery="false" operator="=" or="false" value="EADP"/>
+            <item endquery="false" field="state" goto="false" newquery="false" operator="CHANGESTO" or="false" value="4"/>
+            <item endquery="false" field="u_ela_record" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </filter_condition>
         <is_rest>false</is_rest>
         <message/>
-        <name>Update Child SO Impacts</name>
+        <name>EADP Availability remove canceled CHG</name>
         <onclick/>
-        <order>999</order>
+        <order>200</order>
         <priority>100</priority>
         <read_access_action>false</read_access_action>
         <rest_method/>
@@ -39,39 +38,34 @@
         <rest_service_text/>
         <rest_variables/>
         <role_conditions/>
-        <script><![CDATA[updateChildImpacts();
-function updateChildImpacts() {
-			
-	commentChildImpacts();
-}
+        <script><![CDATA[updateImpactRecord();
 
-function commentChildImpacts() {
-	var rec = new GlideRecord("u_eadp_so_incident_impacts");
-	rec.addQuery("u_parent_incident", current.sys_id);
-	rec.addActiveQuery();
-	rec.query();
-	while (rec.next()) {
-			rec.x_elar_metrix_parent_incident_updated = current.sys_updated_on;
-			rec.update();
-	} 
-}]]></script>
+function updateImpactRecord(){
+	var impact1 = new GlideRecord('x_elar_metrix_launch_availability');
+	if(impact1.get(current.x_elar_metrix_ela_record)); 
+			{
+				impact1.deleteRecord();
+// 				gs.addInfoMessage('impact deleted');
+		}
+ 		
+	}]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>ssturdevant</sys_created_by>
-        <sys_created_on>2017-08-11 19:57:51</sys_created_on>
+        <sys_created_on>2017-08-11 20:10:22</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_domain>global</sys_domain>
-        <sys_id>c9aeb3410f680b007fbd317ce1050ec9</sys_id>
+        <sys_id>2ee28cd10f680b007fbd317ce1050e2f</sys_id>
         <sys_mod_count>4</sys_mod_count>
-        <sys_name>Update Child SO Impacts</sys_name>
+        <sys_name>EADP Availability remove canceled CHG</sys_name>
         <sys_overrides/>
         <sys_package display_value="Metrix" source="x_elar_metrix">2a9bc7450fa4870046c149bce1050efa</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Metrix">2a9bc7450fa4870046c149bce1050efa</sys_scope>
-        <sys_update_name>sys_script_c9aeb3410f680b007fbd317ce1050ec9</sys_update_name>
+        <sys_update_name>sys_script_2ee28cd10f680b007fbd317ce1050e2f</sys_update_name>
         <sys_updated_by>ssturdevant</sys_updated_by>
-        <sys_updated_on>2017-08-11 20:20:37</sys_updated_on>
+        <sys_updated_on>2017-08-11 20:28:29</sys_updated_on>
         <template/>
-        <when>after</when>
+        <when>before</when>
     </sys_script>
 </record_update>

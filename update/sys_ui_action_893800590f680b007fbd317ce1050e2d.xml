@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name>Inserts current record and redirects to </action_name>
+        <active>true</active>
+        <client>false</client>
+        <comments>Saves current record and redirects to new blank record (minus ELA)</comments>
+        <condition>current.canCreate() &amp;&amp; (!current.instanceOf('task') || gs.getProperty('glide.ui.task.insert') == 'true') &amp;&amp; (!current.instanceOf('sys_db_object')) &amp;&amp; !current.x_elar_metrix_ela_record ==''</condition>
+        <form_action>true</form_action>
+        <form_button>true</form_button>
+        <form_context_menu>true</form_context_menu>
+        <form_link>false</form_link>
+        <hint>Saves current record and redirects to new blank record</hint>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <name>Add another</name>
+        <onclick/>
+        <order>100</order>
+        <script><![CDATA[doInsertAndNew();
+function doInsertAndNew() {
+	action.setRedirectURL(current);
+current.update();
+if (! current.isActionAborted())
+    action.setRedirectURL(current);
+    var saveMe = current;
+    if (typeof current.number != 'undefined' && current.number)
+        current.number = ""; // generate a new number
+    else if (typeof current.u_number != 'undefined' && current.u_number)
+        current.u_number = ""; // generate a new number
+	//clear field entries to provide blank slate form for new record
+		current.u_service =""; // clear service name
+		current.u_users_in_game_start =""; //clear users in game start
+		current.u_users_in_game_end =""; //clear users in game end
+		current.u_platform =""; //clear platform
+		current.u_users_online_start =""; //clear users online start
+		current.u_users_online_end =""; //clear users online end	
+	//clear calculated values
+		current.u_users_in_game_impacted =""; //clear users in game impacted
+		current.u_percent_users_in_game_impacted =""; //clear percent users in game impacted
+		current.u_users_impacted =""; //clear % users impacted
+		current.u_users_online_impacted =""; //clear users online impacted	
+		current.x_elar_metrix_ela_record =""; //clear ELA record number
+		current.insert();
+    action.setRedirectURL(saveMe);
+}]]></script>
+        <show_insert>true</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>ssturdevant</sys_created_by>
+        <sys_created_on>2017-08-11 20:33:28</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>893800590f680b007fbd317ce1050e2d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Add another</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Metrix" source="x_elar_metrix">2a9bc7450fa4870046c149bce1050efa</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Metrix">2a9bc7450fa4870046c149bce1050efa</sys_scope>
+        <sys_update_name>sys_ui_action_893800590f680b007fbd317ce1050e2d</sys_update_name>
+        <sys_updated_by>ssturdevant</sys_updated_by>
+        <sys_updated_on>2017-08-11 20:35:17</sys_updated_on>
+        <table>u_eadp_so_incident_impacts</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>true</ui16_compatible>
+    </sys_ui_action>
+</record_update>
