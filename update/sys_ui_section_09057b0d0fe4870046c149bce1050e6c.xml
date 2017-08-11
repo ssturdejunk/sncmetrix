@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_section caption="" section_id="09057b0d0fe4870046c149bce1050e6c" sys_domain="global" table="u_eadp_so_incident_impacts" version="3" view="ela">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_number</element>
+            <position>0</position>
+            <sys_created_by>ssturdevant</sys_created_by>
+            <sys_created_on>2017-08-11 19:14:19</sys_created_on>
+            <sys_id>ed16b34d0fe4870046c149bce1050e08</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_eadp_so_incident_impacts" sys_domain="global" view="bc05bbc90fe4870046c149bce1050e6e">09057b0d0fe4870046c149bce1050e6c</sys_ui_section>
+            <sys_updated_by>ssturdevant</sys_updated_by>
+            <sys_updated_on>2017-08-11 19:14:19</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_service</element>
+            <position>1</position>
+            <sys_created_by>ssturdevant</sys_created_by>
+            <sys_created_on>2017-08-11 19:14:19</sys_created_on>
+            <sys_id>6116b34d0fe4870046c149bce1050e09</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_eadp_so_incident_impacts" sys_domain="global" view="bc05bbc90fe4870046c149bce1050e6e">09057b0d0fe4870046c149bce1050e6c</sys_ui_section>
+            <sys_updated_by>ssturdevant</sys_updated_by>
+            <sys_updated_on>2017-08-11 19:14:19</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_service.u_studio_partner</element>
+            <position>2</position>
+            <sys_created_by>ssturdevant</sys_created_by>
+            <sys_created_on>2017-08-11 19:14:19</sys_created_on>
+            <sys_id>e116b34d0fe4870046c149bce1050e09</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_eadp_so_incident_impacts" sys_domain="global" view="bc05bbc90fe4870046c149bce1050e6e">09057b0d0fe4870046c149bce1050e6c</sys_ui_section>
+            <sys_updated_by>ssturdevant</sys_updated_by>
+            <sys_updated_on>2017-08-11 19:14:19</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_users_online_start</element>
+            <position>3</position>
+            <sys_created_by>ssturdevant</sys_created_by>
+            <sys_created_on>2017-08-11 19:14:19</sys_created_on>
+            <sys_id>6516b34d0fe4870046c149bce1050e09</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_eadp_so_incident_impacts" sys_domain="global" view="bc05bbc90fe4870046c149bce1050e6e">09057b0d0fe4870046c149bce1050e6c</sys_ui_section>
+            <sys_updated_by>ssturdevant</sys_updated_by>
+            <sys_updated_on>2017-08-11 19:14:19</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_users_online_end</element>
+            <position>4</position>
+            <sys_created_by>ssturdevant</sys_created_by>
+            <sys_created_on>2017-08-11 19:14:19</sys_created_on>
+            <sys_id>e516b34d0fe4870046c149bce1050e09</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_eadp_so_incident_impacts" sys_domain="global" view="bc05bbc90fe4870046c149bce1050e6e">09057b0d0fe4870046c149bce1050e6c</sys_ui_section>
+            <sys_updated_by>ssturdevant</sys_updated_by>
+            <sys_updated_on>2017-08-11 19:14:19</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_users_online_impacted</element>
+            <position>5</position>
+            <sys_created_by>ssturdevant</sys_created_by>
+            <sys_created_on>2017-08-11 19:14:19</sys_created_on>
+            <sys_id>6916b34d0fe4870046c149bce1050e09</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_eadp_so_incident_impacts" sys_domain="global" view="bc05bbc90fe4870046c149bce1050e6e">09057b0d0fe4870046c149bce1050e6c</sys_ui_section>
+            <sys_updated_by>ssturdevant</sys_updated_by>
+            <sys_updated_on>2017-08-11 19:14:19</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_users_impacted</element>
+            <position>6</position>
+            <sys_created_by>ssturdevant</sys_created_by>
+            <sys_created_on>2017-08-11 19:14:19</sys_created_on>
+            <sys_id>e916b34d0fe4870046c149bce1050e09</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_eadp_so_incident_impacts" sys_domain="global" view="bc05bbc90fe4870046c149bce1050e6e">09057b0d0fe4870046c149bce1050e6c</sys_ui_section>
+            <sys_updated_by>ssturdevant</sys_updated_by>
+            <sys_updated_on>2017-08-11 19:14:19</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>7</position>
+            <sys_created_by>ssturdevant</sys_created_by>
+            <sys_created_on>2017-08-11 19:14:19</sys_created_on>
+            <sys_id>6d16b34d0fe4870046c149bce1050e09</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_eadp_so_incident_impacts" sys_domain="global" view="bc05bbc90fe4870046c149bce1050e6e">09057b0d0fe4870046c149bce1050e6c</sys_ui_section>
+            <sys_updated_by>ssturdevant</sys_updated_by>
+            <sys_updated_on>2017-08-11 19:14:19</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_parent_incident</element>
+            <position>8</position>
+            <sys_created_by>ssturdevant</sys_created_by>
+            <sys_created_on>2017-08-11 19:14:19</sys_created_on>
+            <sys_id>ed16b34d0fe4870046c149bce1050e09</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_eadp_so_incident_impacts" sys_domain="global" view="bc05bbc90fe4870046c149bce1050e6e">09057b0d0fe4870046c149bce1050e6c</sys_ui_section>
+            <sys_updated_by>ssturdevant</sys_updated_by>
+            <sys_updated_on>2017-08-11 19:14:19</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_platform</element>
+            <position>9</position>
+            <sys_created_by>ssturdevant</sys_created_by>
+            <sys_created_on>2017-08-11 19:14:19</sys_created_on>
+            <sys_id>6116b34d0fe4870046c149bce1050e0a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_eadp_so_incident_impacts" sys_domain="global" view="bc05bbc90fe4870046c149bce1050e6e">09057b0d0fe4870046c149bce1050e6c</sys_ui_section>
+            <sys_updated_by>ssturdevant</sys_updated_by>
+            <sys_updated_on>2017-08-11 19:14:19</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_users_in_game_start</element>
+            <position>10</position>
+            <sys_created_by>ssturdevant</sys_created_by>
+            <sys_created_on>2017-08-11 19:14:19</sys_created_on>
+            <sys_id>e116b34d0fe4870046c149bce1050e0a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_eadp_so_incident_impacts" sys_domain="global" view="bc05bbc90fe4870046c149bce1050e6e">09057b0d0fe4870046c149bce1050e6c</sys_ui_section>
+            <sys_updated_by>ssturdevant</sys_updated_by>
+            <sys_updated_on>2017-08-11 19:14:19</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_users_in_game_end</element>
+            <position>11</position>
+            <sys_created_by>ssturdevant</sys_created_by>
+            <sys_created_on>2017-08-11 19:14:19</sys_created_on>
+            <sys_id>6516b34d0fe4870046c149bce1050e0a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_eadp_so_incident_impacts" sys_domain="global" view="bc05bbc90fe4870046c149bce1050e6e">09057b0d0fe4870046c149bce1050e6c</sys_ui_section>
+            <sys_updated_by>ssturdevant</sys_updated_by>
+            <sys_updated_on>2017-08-11 19:14:19</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_users_in_game_impacted</element>
+            <position>12</position>
+            <sys_created_by>ssturdevant</sys_created_by>
+            <sys_created_on>2017-08-11 19:14:19</sys_created_on>
+            <sys_id>e516b34d0fe4870046c149bce1050e0a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_eadp_so_incident_impacts" sys_domain="global" view="bc05bbc90fe4870046c149bce1050e6e">09057b0d0fe4870046c149bce1050e6c</sys_ui_section>
+            <sys_updated_by>ssturdevant</sys_updated_by>
+            <sys_updated_on>2017-08-11 19:14:19</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_percent_users_in_game_impacted</element>
+            <position>13</position>
+            <sys_created_by>ssturdevant</sys_created_by>
+            <sys_created_on>2017-08-11 19:14:19</sys_created_on>
+            <sys_id>6916b34d0fe4870046c149bce1050e0a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_eadp_so_incident_impacts" sys_domain="global" view="bc05bbc90fe4870046c149bce1050e6e">09057b0d0fe4870046c149bce1050e6c</sys_ui_section>
+            <sys_updated_by>ssturdevant</sys_updated_by>
+            <sys_updated_on>2017-08-11 19:14:19</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_elar_metrix_parent_incident_updated</element>
+            <position>14</position>
+            <sys_created_by>ssturdevant</sys_created_by>
+            <sys_created_on>2017-08-11 19:14:19</sys_created_on>
+            <sys_id>e916b34d0fe4870046c149bce1050e0a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_eadp_so_incident_impacts" sys_domain="global" view="bc05bbc90fe4870046c149bce1050e6e">09057b0d0fe4870046c149bce1050e6c</sys_ui_section>
+            <sys_updated_by>ssturdevant</sys_updated_by>
+            <sys_updated_on>2017-08-11 19:14:19</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_elar_metrix_ela_record</element>
+            <position>15</position>
+            <sys_created_by>ssturdevant</sys_created_by>
+            <sys_created_on>2017-08-11 19:14:19</sys_created_on>
+            <sys_id>6d16b34d0fe4870046c149bce1050e0a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_eadp_so_incident_impacts" sys_domain="global" view="bc05bbc90fe4870046c149bce1050e6e">09057b0d0fe4870046c149bce1050e6c</sys_ui_section>
+            <sys_updated_by>ssturdevant</sys_updated_by>
+            <sys_updated_on>2017-08-11 19:14:19</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>u_eadp_so_incident_impacts</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>ssturdevant</sys_created_by>
+            <sys_created_on>2017-08-11 19:09:39</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_id>09057b0d0fe4870046c149bce1050e6c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>u_eadp_so_incident_impacts</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Metrix" source="x_elar_metrix">2a9bc7450fa4870046c149bce1050efa</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Metrix">2a9bc7450fa4870046c149bce1050efa</sys_scope>
+            <sys_update_name>sys_ui_section_09057b0d0fe4870046c149bce1050e6c</sys_update_name>
+            <sys_updated_by>ssturdevant</sys_updated_by>
+            <sys_updated_on>2017-08-11 19:09:39</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="ELA" name="ela">bc05bbc90fe4870046c149bce1050e6e</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="EADP SO Incident Impacts" max_length="40" name="u_eadp_so_incident_impacts" sizeclass="5031" type="collection">
+        <element label="ELA record" max_length="32" name="x_elar_metrix_ela_record" reference="x_elar_metrix_launch_availability" type="reference"/>
+        <element label="Parent incident updated" max_length="40" name="x_elar_metrix_parent_incident_updated" type="glide_date_time"/>
+        <index name="index">
+            <element name="x_elar_metrix_ela_record"/>
+        </index>
+    </element>
+</database>
