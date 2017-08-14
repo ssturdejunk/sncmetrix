@@ -2,7 +2,7 @@
 <database>
     <element label="Launch Availability" max_length="40" name="x_elar_metrix_launch_availability" type="collection">
         <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
-        <element attributes="max_unit=minutes" label="Actual downtime (mins)" max_length="40" name="u_actual_downtime" type="glide_duration"/>
+        <element attributes="max_unit=minutes" label="Actual downtime (mins)" max_length="40" name="u_actual_downtime" read_only="true" type="glide_duration"/>
         <element label="Business Service" max_length="32" name="u_business_service" reference="cmdb_ci_service" type="reference"/>
         <element label="Change Record" max_length="32" name="u_change_record" reference="change_request" type="reference"/>
         <element label="Create date" max_length="40" name="u_create_date" type="glide_date_time"/>
@@ -23,7 +23,7 @@
         <element label="Minutes downtime" max_length="40" name="u_minutes_downtime" type="integer"/>
         <element label="Parent" max_length="32" name="u_parent" reference="task" type="reference"/>
         <element label="Platform" max_length="32" name="u_platform" reference="u_service_platform" type="reference"/>
-        <element label="Scheduled downtime (mins)" max_length="40" name="u_scheduled_downtime" type="glide_duration"/>
+        <element attributes="max_unit=minutes" label="Scheduled downtime (mins)" max_length="40" name="u_scheduled_downtime" read_only="true" type="glide_duration"/>
         <element label="Start date" max_length="40" name="u_start_date" type="glide_date_time"/>
         <element label="Sub group responsible" max_length="32" name="u_sub_group_responsible" reference="u_eadp_dsr_sub_grouping" type="reference"/>
         <element choice="1" label="Type" max_length="40" name="u_type" type="choice">

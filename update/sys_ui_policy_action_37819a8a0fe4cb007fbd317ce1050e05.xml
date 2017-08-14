@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <disabled>true</disabled>
+        <field>x_elar_metrix_ela_record</field>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>ssturdevant</sys_created_by>
+        <sys_created_on>2017-08-14 14:29:11</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>37819a8a0fe4cb007fbd317ce1050e05</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_elar_metrix_ela_record</sys_name>
+        <sys_package display_value="Metrix" source="x_elar_metrix">2a9bc7450fa4870046c149bce1050efa</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Metrix">2a9bc7450fa4870046c149bce1050efa</sys_scope>
+        <sys_update_name>sys_ui_policy_action_37819a8a0fe4cb007fbd317ce1050e05</sys_update_name>
+        <sys_updated_by>ssturdevant</sys_updated_by>
+        <sys_updated_on>2017-08-14 14:29:11</sys_updated_on>
+        <table>u_eadp_so_incident_impacts</table>
+        <ui_policy display_value="read only so impact ELA fields">ca61d68a0fe4cb007fbd317ce1050e81</ui_policy>
+        <visible>ignore</visible>
+    </sys_ui_policy_action>
+</record_update>

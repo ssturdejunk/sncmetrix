@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element attributes="hasLabels=true,live_feed=false,hasWorkflow=true,attachment_index=true" audit="true" defaultsort="-1" extends="task" label="变更请求" max_length="40" name="change_request" sizeclass="33173" text_index="true" type="collection">
+    <element attributes="hasLabels=true,live_feed=false,hasWorkflow=true,attachment_index=true" audit="true" defaultsort="-1" extends="task" label="变更请求" max_length="40" name="change_request" sizeclass="33176" text_index="true" type="collection">
         <element label="Platform" max_length="32" name="x_elar_metrix_platform" reference="u_service_platform" type="reference"/>
         <element label="ELA record" max_length="32" name="x_elar_metrix_ela_record" reference="x_elar_metrix_launch_availability" type="reference"/>
     </element>
