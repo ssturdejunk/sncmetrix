@@ -38,13 +38,13 @@
         <rest_variables/>
         <role_conditions/>
         <script><![CDATA[var actualDuration = current.u_actual_downtime.dateNumericValue();
-gs.addInfoMessage('Actual duration date numeric value: '+ actualDuration);
+//gs.addInfoMessage('Actual duration date numeric value: '+ actualDuration);
 var actualDurationMinutes = (actualDuration/1000/60);
-gs.addInfoMessage('Actual duration in minutes value: '+ actualDurationMinutes);
+//gs.addInfoMessage('Actual duration in minutes value: '+ actualDurationMinutes);
 var scheduledDuration = current.u_scheduled_downtime.dateNumericValue();
-gs.addInfoMessage('Scheduled duration date numeric value: '+ scheduledDuration);
+//gs.addInfoMessage('Scheduled duration date numeric value: '+ scheduledDuration);
 var scheduledDurationMinutes = (scheduledDuration/1000/60);
-gs.addInfoMessage('Scheduled duration in minutes value: '+ scheduledDurationMinutes);
+//gs.addInfoMessage('Scheduled duration in minutes value: '+ scheduledDurationMinutes);
 
 if(current.u_actual_downtime !=''){
 	current.u_minutes_downtime = actualDurationMinutes.toFixed();
@@ -82,7 +82,7 @@ else {
         <sys_customer_update>true</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>2e7188d10f680b007fbd317ce1050e00</sys_id>
-        <sys_mod_count>34</sys_mod_count>
+        <sys_mod_count>35</sys_mod_count>
         <sys_name>EADP Availability downtime in minutes</sys_name>
         <sys_overrides/>
         <sys_package display_value="Metrix" source="x_elar_metrix">2a9bc7450fa4870046c149bce1050efa</sys_package>
@@ -91,7 +91,7 @@ else {
         <sys_scope display_value="Metrix">2a9bc7450fa4870046c149bce1050efa</sys_scope>
         <sys_update_name>sys_script_2e7188d10f680b007fbd317ce1050e00</sys_update_name>
         <sys_updated_by>ssturdevant</sys_updated_by>
-        <sys_updated_on>2017-08-14 15:41:22</sys_updated_on>
+        <sys_updated_on>2017-08-14 18:52:47</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>
